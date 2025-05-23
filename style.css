@@ -177,6 +177,13 @@ body{
     height: 600px;
 }
 
+#profileImg{
+    width: 400px;
+    height: 400px;
+    padding: 100px;
+    border-radius: 50%;
+}
+
 #about{
     width: 1296px;
     height: 700px;
