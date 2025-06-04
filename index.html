@@ -6,34 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kalyan - Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="header_section">
-         <div class="container">
-            <div class="header-wrapper">
-                <div class="main_logo">
-                    <a href="index.html"><img class="logo" src="/src/images/logo.png" alt="logo"></a>
-                </div>
-                <div class="main-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <!-- <li><a href="#testimonal">Testimonal</a></li> -->
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="talkbutton">
-                    <button id="talkbtn">
-                        <a href="">
-                            Lets Talk!
-                        </a>
-                    </button>
-                </div>
-            </div>       
-        </div>
+        <nav class="header_wrapper">
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="index.html"><img src="/src/images/close.svg" height="26" viewBox="0 96 960 960" width="26"></a></li>
+                <li><a id="links" href="index.html">Home</a></li>
+                <li><a id="links" href="#about">About</a></li>
+                <li><a id="links" href="#work">Work</a></li>
+                <li><a id="links" href="#skills">Skills</a></li>
+                <li><a id="links" href="#blog">Blog</a></li>
+                <li><a id="links" href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html"><img class="logo" src="/src/images/logo.png"></a></li>
+                <li class="hideOnMobile"><a id="links" href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a id="links" href="#about">About</a></li>
+                <li class="hideOnMobile"><a id="links" href="#work">Work</a></li>
+                <li class="hideOnMobile"><a id="links" href="#skills">Skills</a></li>
+                <li class="hideOnMobile"><a id="links" href="#blog">Blog</a></li>
+                <li class="hideOnMobile"><a id="links" href="#contact">Contact</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><img src="/src/images/menu.svg" height="26" viewBox="0 96 960 960" width="26"></a></li>
+            </ul>
+        </nav>
+    </header>
     </header>
     <main class="main_section">
         <div class="main_container">
